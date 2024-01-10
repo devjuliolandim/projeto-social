@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Apple'; /* Escolha um nome para a sua fonte */
+    src: url('../fonts/Myriad\ Pro\ Light.otf') format('opentype'); /* Substitua o caminho pela localização real do arquivo .otf */
+    /* Pode adicionar variações da fonte como font-weight e font-style se necessário */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +17,7 @@ html,body{
 }
 
 body{
-    background-image: url("../pacote-d013/imagens/fundo-madeira.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, white, lightgray);
 }
 
 main{
@@ -23,21 +26,20 @@ main{
     width: 100%;
 }
 
-#iphone{
+section#iphone{
     position: absolute;
     width: 311px;
     height: 627px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-
+    
     background: transparent url("../pacote-d013/imagens/frame-iphone.png") center center no-repeat fixed;
     background-size: cover;
 }
 
 
-#tela{
+iframe#tela{
     top: 80px;
     left: 22px;
     position: relative;
@@ -46,8 +48,8 @@ main{
     width: 268px;
 }
 
-#redes-sociais{
-    position: fixed;
+section#redes-sociais{
+    position: fixed; /* Fiz isso para poder criar uma borda sem que ela comece do outro lado da tela */
     top: 0;
     right: 0;
 
@@ -57,13 +59,13 @@ main{
     border: 2px solid black;
     border-radius: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 
     backdrop-filter: blur(2px);
     box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-#redes-sociais img{
+section#redes-sociais img{
     width: 50px;
     margin: 10px;
     border-radius: 50%;
@@ -71,9 +73,12 @@ main{
     box-sizing: border-box;
 }
 
-#redes-sociais img:hover{
+section#redes-sociais img:hover{
     border: 2px solid rgba(255, 255, 255, 0.608);
     transform: translate(-3px, -3px);
     transition: transform .3s , border 1s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.53);
 }
+
+
+

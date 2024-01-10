@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+img{
+    width: 100vw;
+
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 2em;
+}
+
+#youtube{
+    background-color: red;
+}
+
+#github{
+    background-image: linear-gradient(to right, #3B7A4B, #31AD50, #12E046 );
+}
+
+#instagram{
+    background-image: linear-gradient(to right,#525BCF, #7F35B3, #BA308E,  #E84453, #F9822D );
+}
+
+#twitter{
+    background-color: rgb(0, 166, 255);
+}
+
+#facebook{
+    background-color: darkblue;
+}
